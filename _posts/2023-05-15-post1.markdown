@@ -4,4 +4,8 @@ title:  "Meu primeiro Post!"
 date:   2023-05-15 23:01:08 -0300
 categories: jekyll update
 ---
-Este é o meu primeiro post
+# This is my first post!
+* Learning about DevSecOps
+* Learning about Git
+* Learning about Jekyll
+* Learning about Github Pages
