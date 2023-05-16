@@ -1,7 +1,9 @@
 ---
 layout: post
-title:  "Meu segundo Post!"
+title:  "Where to find"
 date:   2023-05-15 23:01:08 -0300
 categories: jekyll update
 ---
-Este é o meu segundo post
+# This is my second post
+
+To know more about the course, visit [Coursera](https://www.coursera.org/learn/introduction-to-devsecops)
