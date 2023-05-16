@@ -29,5 +29,5 @@ jobs:
       - name: Archive log links
         uses: actions/upload-artifact@v3
         with:
-          name: check-results/links-check.log
+          name: links-check.log
           path: links.log
