@@ -17,7 +17,7 @@ jobs:
         run: | 
           gem update --system --no-document
           gem update bundler --no-document
-          gem html-proofer
+          gem install html-proofer -v 3.4.0
           gem install jekyll bundler
           bundle install
       - name: Build jekyll website with drafts
