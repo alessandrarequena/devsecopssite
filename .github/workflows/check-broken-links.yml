@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
         with:
-          ruby-version: 2.6.x
+          ruby-version: 3.2.2
       - name: Setup Rubygems, Bundler, jekyll
         run: | 
           gem update --system --no-document
