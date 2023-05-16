@@ -1,5 +1,5 @@
 name: check-broken-links
-on: [push]
+on: [pull_request]
 
 jobs:
   check-broken-links:
@@ -20,7 +20,7 @@ jobs:
           gem install html-proofer -v 3.4.0
           gem install jekyll bundler
           bundle install
-      - name: Build jekyll website with drafts
+      - name: Build jekyll site
         run: bundle exec jekyll build --drafts
       - name: Check for broken links
         run: |
