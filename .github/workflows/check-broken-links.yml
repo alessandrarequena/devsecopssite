@@ -17,17 +17,17 @@ jobs:
         run: | 
           gem update --system --no-document
           gem update bundler --no-document
-          gem install html-proofer -v 3.4.0
+          gem html-proofer
           gem install jekyll bundler
           bundle install
       - name: Build jekyll website with drafts
         run: bundle exec jekyll build --drafts
       - name: Check for broken links
         run: |
-          bundle exec htmlproofer _site
+          bundle exec htmlproofer --log-level :debug _site &> links.log
         continue-on-error: true
       - name: Archive log links
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
-          name: links-check.log
+          name: check-results/links-check.log
           path: links.log
